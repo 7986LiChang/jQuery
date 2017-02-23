@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取定义JSON数组中的名称与内容</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<button id="get-value">点击获取学生信息</button>
+	<div id="show-content">学生信息：</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#get-value").on( "click" , function(e){
+				$.getJSON( "studentInfo.json" , function(data){
+					$.each( data , function( index , value ){
+						// $("#show-content").append( "<p>学生姓名：" + value[ name] + "</p>" );
+						alert("学生姓名：" + data[index] );
+					});
+				});
+			});
+		});
+	</script>
+
+</body>
+</html>

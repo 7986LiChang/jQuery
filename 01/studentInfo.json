@@ -1,0 +1,11 @@
+header("Access-Control-Allow-Origin:*");//权限所有都可以
+header("Access-Control-Allow-Methods:POST, GET");
+[
+	{"name" : "lc" , "class" : 01 , "studentNumber" : 001 , "grade" : 100},
+	{"name" : "xf" , "class" : 01 , "studentNumber" : 002 , "grade" : 83},
+	{"name" : "vf" , "class" : 01 , "studentNumber" : 003 , "grade" : 96},
+	{"name" : "nh" , "class" : 01 , "studentNumber" : 004 , "grade" : 75}
+]
+
+
+
